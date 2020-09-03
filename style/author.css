@@ -1,0 +1,35 @@
+:root{
+    --blue: #3150ff;
+    --color:rgb(78, 78, 78);
+    --pink:hotpink;
+    --dm:'DM Serif Text', serif;
+    --robo: 'Roboto', sans-serif;
+    --sac :'Sacramento', cursive;
+    --great: 'Great Vibes', cursive;
+    --cook:  'Rochester', cursive;
+}
+.author{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    width: 80%;
+    margin: 50px auto;
+    color: var(--color);
+}
+.details{
+    padding: 20px;
+}
+.details a{
+    color: var(--pink);
+}
+.title{
+    font-size: 60px;
+    font-family: var(--great);
+    margin: 20px 0;
+}
+.img, .img img{
+    width: 100%;
+}
+.para{
+    margin: 20px 0;
+}

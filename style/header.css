@@ -1,0 +1,148 @@
+/* 
+
+font-family: 'DM Serif Text', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive; 
+font-family: 'Great Vibes', cursive;
+font-family: 'Rochester', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  var(--robo);
+}
+
+:root{
+    --blue: #3150ff;
+    --color:rgb(78, 78, 78);
+    --pink:hotpink;
+    --dm:'DM Serif Text', serif;
+    --robo: 'Roboto', sans-serif;
+    --sac :'Sacramento', cursive;
+    --great: 'Great Vibes', cursive;
+    --cook:  'Rochester', cursive;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    margin: 0px auto;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    min-height: 100px;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 1px 10px 8px #88888813;
+}
+h1{
+    position: relative;
+    top: 15px;
+    font-size: 1.6rem;
+    font-family: var(--sac);
+    text-align: center;
+}
+
+
+/* Catagory link style */
+
+.burger{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 15px;
+    left: 25px;
+    cursor: pointer;
+}
+.burger div{
+    width: 30px;
+    height: 2px;
+    margin: 7px;
+    background-color: rgb(83, 83, 83);
+} 
+
+#catagory{
+    width: 300px;
+    height: 90vh;
+    position: fixed;
+    left: -300px;
+    transition: 1s;
+    animation-fill-mode: forwards;
+}
+
+.cat-link{
+    box-shadow: 1px 10px 8px #88888813;
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+}
+.cat-link ul{
+    list-style: none;
+}
+.cat-link ul li{
+    margin: 10px;
+}
+.cat-link ul li a{
+    color: var(--blue);
+    text-decoration: none;
+}
+.cat-link ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Follow link style */
+
+.fol-link{
+    position: relative;
+    top: 15px;
+    right: 25px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+.fol-link ul{
+    list-style: none;
+}
+
+.fol-link ul li{
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+}
+
+main{
+    max-width: 600px;
+    width: 80%;
+    margin:50px auto ;
+}
+
+
+@media(max-width:530px){
+    header{
+        grid-template-columns: 1fr 2fr;
+    }
+    h1{
+        right: 20px;
+    }
+    #follow{
+        grid-column: 1/3;
+    }
+    .fol-link{
+        justify-content: center;
+    }
+    .fol-link, h1, .burger{
+        top: 0;
+    }
+}
