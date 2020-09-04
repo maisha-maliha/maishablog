@@ -1,0 +1,126 @@
+:root{
+    --blue: #3150ff;
+    --color:rgb(78, 78, 78);
+    --pink:hotpink;
+    --dm:'DM Serif Text', serif;
+    --robo: 'Roboto', sans-serif;
+    --sac :'Sacramento', cursive;
+    --great: 'Great Vibes', cursive;
+    --cook:  'Rochester', cursive;
+}
+#article, h3{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+main{
+    margin: 50px auto 100px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:2fr 300px;
+}
+h3{
+    margin: 150px auto 50px;
+}
+.post{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 0 0 80px;
+    min-height: 200px;
+}
+.post_des{
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.post_des h2 a{
+    margin: 0 0 20px;
+    font-family: var(--dm);
+    font-weight: 100;
+    text-decoration: none;
+}
+.tags{
+    justify-self: flex-end;
+}
+.post_des h2 a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+.post_img, .post_img{
+    overflow: hidden;
+}
+.post_img, .post_img img{
+    width: 100%;
+    height: 200px;
+}
+.post_img:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+    animation-fill-mode: both;
+}
+.post_img img{
+    object-fit: cover;
+}
+.date{
+    color:rgb(122, 122, 122);
+}
+.tags{
+    color:var(--blue);
+}
+.number{
+    font-size: 50px;
+    font-family: var(--dm);
+}
+
+.AD{
+    height: 350px;
+    background-color: var(--blue);
+    margin: 50px 0;
+}
+.youtube{
+    height: 350px;
+    background-color: var(--pink);
+    margin: 50px 0;
+}
+
+
+.pagination{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+}
+.preview , .next{
+    display: none;
+}
+.preview a, .next a{
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+@media(max-width:800px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:530px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    .post{
+        grid-template-columns:  1fr;
+        grid-gap: 20px;
+    }
+    .post_des{
+        padding: 0 10px;
+    }
+}

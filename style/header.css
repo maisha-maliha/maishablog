@@ -88,7 +88,7 @@ h1{
     margin: 10px;
 }
 .cat-link ul li a{
-    color: var(--blue);
+    color: var(--pink);
     text-decoration: none;
 }
 .cat-link ul li a:hover{
@@ -122,16 +122,9 @@ h1{
     padding: 5px 10px 5px 0;
 }
 
-main{
-    max-width: 600px;
-    width: 80%;
-    margin:50px auto ;
-}
-
-
 @media(max-width:530px){
     header{
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr minmax(251px,1fr);
     }
     h1{
         right: 20px;
