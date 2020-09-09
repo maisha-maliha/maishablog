@@ -145,7 +145,7 @@ const post_length = post.length
 let j , k , l
 console.log(window.location.href)
 
-const home = "file:///F:/MY%20SPACE/maisha/index.html"
+const home = "https://www.maishamaliha.com/"
 const code = "https://www.maishamaliha.com/code.html"
 const lifestyle = "https://www.maishamaliha.com/lifestyle.html"
 const travel = "https://www.maishamaliha.com/travel.html"
