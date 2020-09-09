@@ -145,19 +145,19 @@ const post_length = post.length
 let j , k , l
 console.log(window.location.href)
 
-// const home = "file:///F:/MY%20SPACE/maisha/index.html"
-// const code = "https://www.maishamaliha.com/code.html"
-// const lifestyle = "https://www.maishamaliha.com/lifestyle.html"
-// const travel = "https://www.maishamaliha.com/travel.html"
-// const tech = "https://www.maishamaliha.com/tech.html"
-// const design = "https://www.maishamaliha.com/design.html"
-
 const home = "file:///F:/MY%20SPACE/maisha/index.html"
-const code = "file:///F:/MY%20SPACE/maisha/code.html"
-const lifestyle = "file:///F:/MY%20SPACE/maisha//lifestyle.html"
-const travel = "file:///F:/MY%20SPACE/maisha/travel.html"
-const tech = "file:///F:/MY%20SPACE/maisha/tech.html"
-const design = "file:///F:/MY%20SPACE/maisha/design.html"
+const code = "https://www.maishamaliha.com/code.html"
+const lifestyle = "https://www.maishamaliha.com/lifestyle.html"
+const travel = "https://www.maishamaliha.com/travel.html"
+const tech = "https://www.maishamaliha.com/tech.html"
+const design = "https://www.maishamaliha.com/design.html"
+
+// const home = "file:///F:/MY%20SPACE/maisha/index.html"
+// const code = "file:///F:/MY%20SPACE/maisha/code.html"
+// const lifestyle = "file:///F:/MY%20SPACE/maisha//lifestyle.html"
+// const travel = "file:///F:/MY%20SPACE/maisha/travel.html"
+// const tech = "file:///F:/MY%20SPACE/maisha/tech.html"
+// const design = "file:///F:/MY%20SPACE/maisha/design.html"
 
 
 if(window.location.href==home){
