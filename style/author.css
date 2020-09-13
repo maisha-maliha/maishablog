@@ -28,7 +28,11 @@
     font-family: var(--great);
     margin: 20px 0;
 }
+.img img{
+    object-fit: cover;
+}
 .img, .img img{
+    height: 570px;
     width: 100%;
 }
 .para{

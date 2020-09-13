@@ -125,7 +125,7 @@ var posts = {
             name:"code",
             loc: "code.html"
         },
-        img:"images/me.jpg"
+        img:"images/me2.jpg"
     }
 
 }
