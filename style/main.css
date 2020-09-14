@@ -104,15 +104,6 @@ iframe{
 }
 
 
-footer{
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: var(--blue);
-    color: white;
-}
-
-
 @media(max-width:800px){
     main{
         grid-template-columns: 1fr;

@@ -6,130 +6,20 @@
 
 
 var posts = {
-    11:{
-        title: "hi 10",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "travel.html"
-        },
-        img:"images/me.jpg"
-    },
-    10:{
-        title: "hi 10",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "travel.html"
-        },
-        img:"images/me.jpg"
-    },
-    9:{
-        title: "hi 9",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "travel.html"
-        },
-        img:"images/me.jpg"
-    },
-    8:{
-        title: "hi 8",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "code.html"
-        },
-        img:"images/me.jpg"
-    },
-    7:{
-        title: "hi 7",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "code.html"
-        },
-        img:"images/me.jpg"
-    },
-    6:{
-        title: "hi 6",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"travel",
-            loc: "code.html"
-        },
-        img:"images/me.jpg"
-    },
-    5:{
-        title: "hi 5",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "travel.html"
-        },
-        img:"images/me.jpg"
-    },
-    4:{
-        title: "h 4",
-        link: "Code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "code.html"
-        },
-        img:"images/me.jpg"
-    },
-    3:{
-        title: "hi 3",
-        link: "code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"travel",
-            loc: "code.html"
-        },
-        img:"images/me.jpg"
-    },
-    2:{
-        title: "hi2",
-        link: "code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "travel.html"
-        },
-        img:"images/me.jpg"
-    },
-    1:{
-        title: "hi1",
-        link: "code.html",
-        date:"1/2/2020",
-        author: "Maisha Maliha",
-        tag:{
-            name:"code",
-            loc: "code.html"
-        },
-        img:"images/me2.jpg"
-    }
+
+    // 1:{
+    //     title: "hi1",
+    //     link: "code.html",
+    //     date:"1/2/2020",
+    //     author: "Maisha Maliha",
+    //     tag:{
+    //         name:"code",
+    //         loc: "code.html"
+    //     },
+    //     img:"images/me2.jpg"
+    // }
 
 }
-
 
 const post = document.querySelectorAll(".post")
 const post_img = document.querySelectorAll(".post_img img")
@@ -160,7 +50,7 @@ const design = "https://www.maishamaliha.com/design.html"
 // const design = "file:///F:/MY%20SPACE/maisha/design.html"
 
 
-if(window.location.href==home){
+if(window.location.href==home || window.location.href ==home+"#article"){
     for(var i = 0; i<post_length ; i++){
         j = i+1
         if(posts_length>=i+1){
@@ -934,3 +824,14 @@ if(window.location.href==design|| window.location.href ==travel+"l#article"){
         // j--
     }
 }
+
+
+const post_link = document.querySelector(".post_links ul")
+
+for(let i = 0,j = posts_length; i < 5 ; i++,j--){
+    var z = document.createElement('li'); // is a node
+    z.innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>";
+    post_link.appendChild(z);
+    console.log("hello")
+}
+// "<li> <a href=" + posts[j].link + ">" + posts[j].title + "</a></li>"

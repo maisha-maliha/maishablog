@@ -1,0 +1,68 @@
+:root{
+    --blue: #3150ff;
+    --color:rgb(78, 78, 78);
+    --pink:hotpink;
+    --dm:'DM Serif Text', serif;
+    --robo: 'Roboto', sans-serif;
+    --sac :'Sacramento', cursive;
+    --great: 'Great Vibes', cursive;
+    --cook:  'Rochester', cursive;
+}
+*{
+    font-family: var(--robo);
+}
+main{
+    max-width: 700px;
+    width: 90%;
+    margin: 50px auto;
+}
+.you{
+    width: 100%;
+    padding: 50px 0;
+}
+.you-vid{
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+iframe{
+    width: 100%;
+    height: 380px;
+}
+main h2,main h1{
+    font-family: var(--great);
+    font-weight: 100;
+    color: var(--blue);
+}
+main h1{
+    font-size: 65px;
+    margin: 50px auto;
+    color: var(--pink);
+}
+main h2{
+    margin: 50px 0 20px;
+    font-size: 45px;
+}
+main img{
+    width: 100%;
+}
+main p{
+    margin: 40px;
+    line-height: 40px;
+    word-spacing: 3px;
+}
+a{
+    color: var(--pink);
+}
+main ul{
+    margin-left: 50px;
+}
+main ul li{
+    list-style: none;
+}
+main li:before { 
+    content: '#';
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--blue);
+}
