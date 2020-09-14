@@ -66,3 +66,9 @@ main li:before {
     margin-right: 10px;
     color: var(--blue);
 }
+
+@media(max-width:530px){
+    main p{
+        margin: 40px 0;
+    }
+}
