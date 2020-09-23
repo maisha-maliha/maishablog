@@ -4,7 +4,7 @@ font-family: 'DM Serif Text', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Sacramento', cursive; 
 font-family: 'Great Vibes', cursive;
-font-family: 'Rochester', cursive;
+font-family: 'Niconne', cursive;
 */
 
 *{
@@ -21,8 +21,7 @@ font-family: 'Rochester', cursive;
     --dm:'DM Serif Text', serif;
     --robo: 'Roboto', sans-serif;
     --sac :'Sacramento', cursive;
-    --great: 'Great Vibes', cursive;
-    --cook:  'Rochester', cursive;
+    --cook:  'Niconne', cursive;
 }
 
 header{
@@ -85,7 +84,7 @@ header h1{
     list-style: none;
 }
 .cat-link ul li{
-    margin: 10px;
+    margin: 25px;
 }
 .cat-link ul li a{
     color: var(--pink);
@@ -126,8 +125,9 @@ header h1{
     header{
         grid-template-columns: 1fr minmax(251px,1fr);
     }
-    h1{
+    header h1{
         right: 20px;
+        top: 0;
     }
     #follow{
         grid-column: 1/3;

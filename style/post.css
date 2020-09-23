@@ -5,8 +5,8 @@
     --dm:'DM Serif Text', serif;
     --robo: 'Roboto', sans-serif;
     --sac :'Sacramento', cursive;
-    --great: 'Great Vibes', cursive;
-    --cook:  'Rochester', cursive;
+    --cook:  'Niconne', cursive;
+    --pink2:rgb(252, 203, 233);
 }
 /* article styling */
 article{
@@ -14,7 +14,7 @@ article{
     width: 90%;
     margin: 50px auto 100px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 40px;
     grid-template-columns:2fr 300px;
 }
 
@@ -32,6 +32,7 @@ article{
 /* adress styling */
 .address{
     font-family: var(--dm);
+    margin: 0 0 50px;
 }
 .address p{
     margin: 20px 0;
@@ -59,8 +60,8 @@ article{
     height: 30px;
 }
 .address ul{
-    width: 195px;
-    margin: 10px auto 50px;
+    width: 240px;
+    margin: 20px auto;
 }
 .address li a{
     text-decoration: none;
@@ -69,30 +70,37 @@ article{
     color: grey;
     margin:0 0 50px;
 }
+.description{
+    margin: 0 20px;
+}
+
 
 /* post tags styling */
+
 main a{
     color: var(--pink);
 }
 main .post p{
-    margin: 40px 0;
+    margin: 20px 0 40px;
     line-height: 40px;
     word-spacing: 3px;
     font-size: 16px;
+    color: var(--color);
 }
-main strong{
-    color: var(--pink);
-    
+main strong, main b{
+    color: var(--pink); 
 }
 main h2{
     font-size: 35px;
     color: var(--blue);
     font-family: var(--dm);
+    margin: 20px 0;
 }
 main h3{
     font-size: 25px;
     color: var(--blue);
     font-family: var(--dm);
+    margin: 20px 0;
 }
 
 main section{
@@ -100,12 +108,12 @@ main section{
     padding: 20px;
 }
 main section.code{
-    background-color: rgb(255, 185, 220);
+    background-color: var(--pink2);
     color: var(--blue);
 }
 main section.result{
     background-color: var(--blue);
-    color: var(--pink);
+    color: var(--pink2);
 }
 main blockquote{
     font-family: var(--cook);
@@ -117,16 +125,13 @@ main .break{
     display: inline;
     margin-left: 20px;
 }
-
-
-/* ul list styling */
-.post_li li{
-    list-style: none;
-    margin: 20px 0;
-    line-height: 40px;
-    word-spacing: 3px;
+img{
+    width: 100%;
 }
-.post_li li:before {
+
+/* para list styling */
+
+p.list:before {
     content: '#';
     font-size: 30px;
     margin-right: 10px;
@@ -153,8 +158,8 @@ main .break{
     margin-right: 10px;
     color: var(--blue);
 }
-.follow_part h2, .post_links h2{
-    font-family: var(--great);
+.follow_part h2, .post_links h2, .featured-post h2{
+    font-family: var(--cook);
     font-weight: 100;
     color: var(--blue);
     margin: 50px 0 20px;

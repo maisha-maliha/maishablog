@@ -5,8 +5,7 @@
     --dm:'DM Serif Text', serif;
     --robo: 'Roboto', sans-serif;
     --sac :'Sacramento', cursive;
-    --great: 'Great Vibes', cursive;
-    --cook:  'Rochester', cursive;
+    --cook:  'Niconne', cursive;
 }
 .author{
     display: grid;
@@ -15,18 +14,18 @@
     max-width: 800px;
     width: 80%;
     margin: 50px auto;
-    color: var(--color);
 }
 .details{
-    padding: 20px;
+    padding: 10px 20px;
 }
 .details a{
     color: var(--pink);
 }
 .title{
     font-size: 60px;
-    font-family: var(--great);
-    margin: 20px 0;
+    font-family: var(--cook);
+    color: var(--blue);
+    margin: 0 0 20px;
 }
 .img img{
     object-fit: cover;
@@ -37,6 +36,7 @@
 }
 .para{
     margin: 20px 0;
+    color: var(--color);
 }
 
 @media(max-width:530px){
