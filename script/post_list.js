@@ -16,7 +16,7 @@ var posts = {
             name:"lifestyle",
             loc: "lifestyle.html"
         },
-        img:"images/pic3.jpg"
+        img:"images/pic1.jpg"
     }
 
 }
