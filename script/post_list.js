@@ -7,17 +7,17 @@
 
 var posts = {
 
-    // 1:{
-    //     title: "hi1",
-    //     link: "code.html",
-    //     date:"1/2/2020",
-    //     author: "Maisha Maliha",
-    //     tag:{
-    //         name:"code",
-    //         loc: "code.html"
-    //     },
-    //     img:"images/me2.jpg"
-    // }
+    1:{
+        title: "My first year on studying Computer Science and Engineering",
+        link: "https://www.maishamaliha.com/posts/my-first-year-on-studying-computer-science-and-engineering.html",
+        date:"01/10/2020",
+        author: "Maisha Maliha",
+        tag:{
+            name:"lifestyle",
+            loc: "lifestyle.html"
+        },
+        img:"images/pic3.jpg"
+    }
 
 }
 
@@ -269,7 +269,7 @@ if(window.location.href==code|| window.location.href ==code+"#article"){
     }
 }
 
-if(window.location.href==travel|| window.location.href ==travel+"l#article"){
+if(window.location.href==travel|| window.location.href ==travel+"#article"){
     const tag = "travel"
     j = 1
     k = 0
@@ -408,7 +408,7 @@ if(window.location.href==travel|| window.location.href ==travel+"l#article"){
     }
 }
 
-if(window.location.href==tech|| window.location.href ==travel+"l#article"){
+if(window.location.href==tech|| window.location.href ==tech+"#article"){
     const tag = "technology"
     j = 1
     k = 0
@@ -547,7 +547,7 @@ if(window.location.href==tech|| window.location.href ==travel+"l#article"){
     }
 }
 
-if(window.location.href==lifestyle|| window.location.href ==travel+"l#article"){
+if(window.location.href==lifestyle|| window.location.href ==lifestyle+"#article"){
     const tag = "lifestyle"
     j = 1
     k = 0
@@ -686,7 +686,7 @@ if(window.location.href==lifestyle|| window.location.href ==travel+"l#article"){
     }
 }
 
-if(window.location.href==design|| window.location.href ==travel+"l#article"){
+if(window.location.href==design|| window.location.href ==design+"#article"){
     const tag = "design"
     j = 1
     k = 0
@@ -828,10 +828,12 @@ if(window.location.href==design|| window.location.href ==travel+"l#article"){
 
 const post_link = document.querySelector(".post_links ul")
 
-for(let i = 0,j = posts_length; i < 5 ; i++,j--){
-    var z = document.createElement('li'); // is a node
-    z.innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>";
-    post_link.appendChild(z);
-    console.log("hello")
+for(let i = 0,j = posts_length; i < 5 , j > 0; i++,j--){
+    var z = document.createElement('li') // is a node
+    z.innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>"
+    post_link.appendChild(z)
 }
+const fea_link = document.querySelector(".featured-post ul")
+fea_link.innerHTML = "<li> <a href=" + posts[1].link + ">" + posts[1].title + "</a></li>"
+
 // "<li> <a href=" + posts[j].link + ">" + posts[j].title + "</a></li>"

@@ -1,12 +1,15 @@
 :root{
     --blue: #3150ff;
-    --color:rgb(78, 78, 78);
+    --color:#44475a;
     --pink:hotpink;
     --dm:'DM Serif Text', serif;
     --robo: 'Roboto', sans-serif;
     --sac :'Sacramento', cursive;
     --cook:  'Niconne', cursive;
-    --pink2:rgb(252, 203, 233);
+    --pink2:#ff79c6;
+    --back:#282a36;
+    --color2:#bd93f9;
+    --back2:#44475a;
 }
 /* article styling */
 article{
@@ -86,6 +89,7 @@ main .post p{
     word-spacing: 3px;
     font-size: 16px;
     color: var(--color);
+    text-align: justify;
 }
 main strong, main b{
     color: var(--pink); 
@@ -108,12 +112,12 @@ main section{
     padding: 20px;
 }
 main section.code{
-    background-color: var(--pink2);
-    color: var(--blue);
+    background-color: var(--back);
+    color: var(--pink2);
 }
 main section.result{
-    background-color: var(--blue);
-    color: var(--pink2);
+    background-color: var(--back2);
+    color: var(--color2);
 }
 main blockquote{
     font-family: var(--cook);
@@ -125,8 +129,9 @@ main .break{
     display: inline;
     margin-left: 20px;
 }
-img{
+main img{
     width: 100%;
+    margin: 30px 0;
 }
 
 /* para list styling */
@@ -163,9 +168,24 @@ p.list:before {
     font-weight: 100;
     color: var(--blue);
     margin: 50px 0 20px;
-    font-size: 45px;
+    font-size: 35px;
 }
-
+.featured-post {
+    margin: 0 10px;
+}
+.featured-post ul{
+    margin-left: 50px;
+}
+.featured-post li{
+    list-style-type: circle;
+}
+.featured-post a{
+    text-decoration: none;
+    color: var(--pink);
+}
+span.cmnt{
+    color:#ffb86c;
+}
 @media(max-width:530px){
     article{
         grid-template-columns: 1fr;
