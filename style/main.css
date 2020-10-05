@@ -39,10 +39,15 @@ h3{
     text-decoration: none;
 }
 .post_des h2 a,.post_des h2 a:visited,.post_des h2 a:active{
-    color: var(--pink);
+    color: var(--color);
 }
 .tags{
     justify-self: flex-end;
+    align-self: end;
+}
+.tags a, .tags a:visited{
+    color: var(--blue);
+    text-decoration: none;
 }
 .post_des h2 a:hover{
     color: var(--pink);
@@ -65,10 +70,9 @@ h3{
 }
 .date{
     color:rgb(122, 122, 122);
+    align-self: end;
 }
-.tags{
-    color:var(--blue);
-}
+
 .number{
     font-size: 50px;
     font-family: var(--dm);
