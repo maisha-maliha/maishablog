@@ -6,7 +6,17 @@
 
 
 var posts = {
-
+    2:{
+        title: "3 ways to build a website",
+        link: "https://www.maishamaliha.com/posts/3-ways-to-build-a-website.html",
+        date:"05/10/2020",
+        author: "Maisha Maliha",
+        tag:{
+            name:"Technology",
+            loc: "tech.html"
+        },
+        img:"https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    },
     1:{
         title: "My first year on studying Computer Science and Engineering",
         link: "https://www.maishamaliha.com/posts/my-first-year-on-studying-computer-science-and-engineering.html",
