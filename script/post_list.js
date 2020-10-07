@@ -2,7 +2,17 @@
 // tech = 20 web =21 desktop = 22 app=23
 // lifestyle = 30 
 // travel = 40 bd = 41
-
+// {
+//     title: "Beginners guide to learning CSS",
+//     link: "../posts/Beginners-guide-to-learning-css.html",
+//     date:"07/10/2020",
+//     author: "Maisha Maliha",
+//     tag:{
+//         name:"code",
+//         loc: "../code.html"
+//     },
+//     img:"../images/css.png"
+// },
 
 var posts = [
     {
@@ -41,6 +51,46 @@ var posts = [
 
 ]
 
+
+
+// var posts = [
+//     {
+//         title: "p3",
+//         link: "../posts/Beginners-guide-to-learning-css.html",
+//         date:"07/10/2020",
+//         author: "Maisha Maliha",
+//         tag:{
+//             name:"code",
+//             loc: "../code.html"
+//         },
+//         img:"../images/css.png"
+//     },
+//     {
+//         title: "p2",
+//         link: "../posts/Beginners-guide-to-learning-css.html",
+//         date:"07/10/2020",
+//         author: "Maisha Maliha",
+//         tag:{
+//             name:"code",
+//             loc: "../code.html"
+//         },
+//         img:"../images/css.png"
+//     },
+//     {
+//         title: "p1",
+//         link: "../posts/Beginners-guide-to-learning-css.html",
+//         date:"07/10/2020",
+//         author: "Maisha Maliha",
+//         tag:{
+//             name:"code",
+//             loc: "../code.html"
+//         },
+//         img:"../images/css.png"
+//     },
+
+// ]
+
+
 const post = document.querySelectorAll(".post")
 const post_img = document.querySelectorAll(".post_img img")
 const postimg = document.querySelectorAll(".post_img")
@@ -72,7 +122,7 @@ const design = "https://www.maishamaliha.com/design.html"
 
 if(window.location.href==home || window.location.href ==home+"#article"){
     for(var i = 0; i<post_length ; i++){
-        j = i+1
+        j = i
         if(posts_length>=i+1){
             post_img[i].setAttribute("src",posts[j].img)
             post_title[i].innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>"
