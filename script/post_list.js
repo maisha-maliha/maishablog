@@ -14,8 +14,8 @@
 //     img:"../images/css.png"
 // },
 
-var posts = [
-    {
+var posts = {
+    1:{
         title: "Beginners guide to learning CSS",
         link: "https://www.maishamaliha.com/posts/Beginners-guide-to-learning-css.html",
         date:"07/10/2020",
@@ -26,7 +26,7 @@ var posts = [
         },
         img:"https://www.maishamaliha.com/images/css.png"
     },
-    {
+    2:{
         title: "3 ways to build a website",
         link: "https://www.maishamaliha.com/posts/3-ways-to-build-a-website.html",
         date:"05/10/2020",
@@ -37,7 +37,7 @@ var posts = [
         },
         img:"https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
-    {
+    3:{
         title: "My first year on studying Computer Science and Engineering",
         link: "https://www.maishamaliha.com/posts/my-first-year-on-studying-computer-science-and-engineering.html",
         date:"01/10/2020",
@@ -49,7 +49,7 @@ var posts = [
         img:"images/pic2.jpg"
     }
 
-]
+}
 
 
 
@@ -122,11 +122,11 @@ const design = "https://www.maishamaliha.com/design.html"
 
 if(window.location.href==home || window.location.href ==home+"#article"){
     for(var i = 0; i<post_length ; i++){
-        j = i
+        j = i + 1
         if(posts_length>=i+1){
             post_img[i].setAttribute("src",posts[j].img)
             post_title[i].innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>"
-            post_number[i].innerHTML = (j) + "| "
+            post_number[i].innerHTML = j + "| "
             post_title[i].setAttribute("href",posts[j].link)
             post_date[i].innerHTML = posts[j].date
             post_tags[i].innerHTML = "<a href=" + posts[j].tag.loc+">" + posts[j].tag.name + "</a>"
@@ -151,7 +151,7 @@ if(window.location.href==home || window.location.href ==home+"#article"){
                 post[i].style =""
                 post_img[i].setAttribute("src",posts[j].img)
                 post_title[i].innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>"
-                post_number[i].innerHTML = (j) + "| "
+                post_number[i].innerHTML = j + 1 + "| "
                 post_title[i].setAttribute("href",posts[j].link)
                 post_date[i].innerHTML = posts[j].date
                 post_tags[i].innerHTML = "<a href=" + posts[j].tag.loc+">" + posts[j].tag.name + "</a>"
@@ -898,7 +898,7 @@ if(window.location.href==design|| window.location.href ==design+"#article"){
 
 const post_link = document.querySelector(".post_links ul")
 
-for(let i = 0,j = posts_length; i < 5 , j > 0; i++,j--){
+for(let i = 0,j = posts_length-1; i < 5 , j > 0; i++,j--){
     var z = document.createElement('li') // is a node
     z.innerHTML = "<a href=" + posts[j].link + ">" + posts[j].title + "</a>"
     post_link.appendChild(z)
