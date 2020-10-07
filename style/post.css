@@ -144,6 +144,7 @@ main img{
 }
 .post li{
     list-style: none;
+    margin: 20px 0;
 }
 .post li:before{
     content: '\0000BB';
@@ -151,7 +152,10 @@ main img{
     color: var(--pink);
     padding-right: 10px;
 }
-
+main h4{
+    margin: 20px 0;
+    text-decoration: underline;
+}
 
 /* para list styling */
 

@@ -4,8 +4,18 @@
 // travel = 40 bd = 41
 
 
-
 var posts = {
+    3:{
+        title: "Beginners guide to learning CSS",
+        link: "https://www.maishamaliha.com/posts/Beginners-guide-to-learning-css.html",
+        date:"07/10/2020",
+        author: "Maisha Maliha",
+        tag:{
+            name:"code",
+            loc: "code.html"
+        },
+        img:"https://www.maishamaliha.com/images/css.png"
+    },
     2:{
         title: "3 ways to build a website",
         link: "https://www.maishamaliha.com/posts/3-ways-to-build-a-website.html",
