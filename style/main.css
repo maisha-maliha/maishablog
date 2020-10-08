@@ -31,6 +31,7 @@ h3{
     padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
 }
 .post_des h2 a{
     margin: 0 0 20px;

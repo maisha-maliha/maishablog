@@ -16,7 +16,7 @@
 
 var posts = {
     4:{
-        title: "Beginners guide to learning CSS",
+        title: "How to use terminal to compile and run java program",
         link: "https://www.maishamaliha.com/posts/10-2020/How-to-use-terminal-to-compile-and-run-java-program.html",
         date:"09/10/2020",
         author: "Maisha Maliha",
