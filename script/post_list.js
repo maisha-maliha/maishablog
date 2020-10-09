@@ -15,6 +15,17 @@
 // },
 
 var posts = {
+    5:{
+        title: "Compile and run java program in different directory",
+        link: "https://www.maishamaliha.com/posts/10-2020/Compile-and-run-java-program-in-different-directory.html",
+        date:"09/10/2020",
+        author: "Maisha Maliha",
+        tag:{
+            name:"code",
+            loc: "code.html"
+        },
+        img:"https://www.maishamaliha.com/images/pic3.png"
+    },
     4:{
         title: "How to use terminal to compile and run java program",
         link: "https://www.maishamaliha.com/posts/10-2020/How-to-use-terminal-to-compile-and-run-java-program.html",

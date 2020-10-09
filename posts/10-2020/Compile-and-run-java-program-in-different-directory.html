@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- meta tags for web info -->
+    <link rel="icon" href="../../images/icon/logo.png">
+    <meta name="description" content="At first set the cmd path to your desired java program folder. If you don’t know how to do it check my this blog post:">  <!-- A short description of the post -->
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Maisha Maliha">
+    <meta property="og:site_name" content="Maisha Maliha Blog"> 
+    <meta property="og:title" content="Compile and run java program in different directory"> <!-- The title of the post -->
+    <meta property="og:description" content="At first set the cmd path to your desired java program folder. If you don’t know how to do it check my this blog post:"> <!-- A short description of the post -->
+    <meta property="og:image" content="https://www.maishamaliha.com/images/pic11.png">  <!-- The image of the post -->
+    <meta property="og:image:width" content="865">
+    <meta property="og:image:height" content="577">
+    <meta property="og:url" content="https://www.maishamaliha.com/posts/10-2020/Compile-and-run-java-program-in-different-directory.html">  <!-- The link of the post -->
+    <meta name="keywords" content=""><!-- write the keywords and separate using comma -->
+
+
+    <!-- meta tag for twitter -->
+    <meta name="twitter:title" content="Compile and run java program in different directory">
+    <meta name="twitter:description" content="At first set the cmd path to your desired java program folder. If you don’t know how to do it check my this blog post:">
+    <meta name="twitter:image" content="https://www.maishamaliha.com/images/pic11.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="../../style/header.css">
+    <link rel="stylesheet" href="../../style/post.css">
+    <link rel="stylesheet" href="../../style/footer.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+    <title>Compile and run java program in different directory</title>
+</head>
+<body>
+
+    <header>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <h1>Maisha Maliha | Blog</h1>
+
+        <nav id="follow">
+            <div class="fol-link">
+                <ul>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <nav id="catagory">
+        <div class="cat-link">
+            <ul>
+                <li><a target="_blank" href="https://www.maishamaliha.com/">Home</a></li>
+                <li><a target="_blank" href="../../code.html">Code</a></li>
+                <li><a target="_blank" href="../../lifestyle.html">Lifestyle</a></li>
+                <li><a target="_blank" href="../../design.html">Design</a></li>
+                <li><a target="_blank" href="../../travel.html">Travel</a></li>
+                <li><a target="_blank" href="../../tech.html">Technology</a></li>
+                <li><a target="_blank" href="../../about.html">About</a></li>
+                <li><a target="_blank" href="../../portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Compile and run java program in different directory</h1>
+    </div>
+    <article>
+        <main>
+            <div class="info">
+                 <!--date  -->
+                 09/10/2020
+                <br>
+                By Maisha Maliha
+            </div>
+            <div class="post">
+               <p>
+                At first set the cmd path to your desired java program folder. If you don’t know how to do it check my this blog post: <a href="https://www.maishamaliha.com/posts/10-2020/How-to-use-terminal-to-compile-and-run-java-program.html">How to use terminal to compile and run java program</a>
+               </p>
+                <img src="../../images/pic11.png" alt="">
+                <p class="list">
+                    Now I will set the path inside the package “pack1” by writing “cd pack1”. Then we are going to compile the java program at first. So we write “javac” in the beginning. Then we write “-d” , which denoted that we are going to save the java class file in another directoy. And then we write “../class”, which is the path we set for the java class files in relation to this path “F:\MY SPACE\JAVA\New folder\pack1”. 
+                </p>
+                <img src="../../images/pic12.png" alt="">
+                <p>
+                    Now in relation to this path ” F:\MY SPACE\JAVA\New folder\pack1”, to direct the javac to the class folder we at first write ”../”, which means go to the previous folder. Then from the previous folder point, which is “F:\MY SPACE\JAVA\New folder”, we point to the class folder “class”. That’s why we write “../class”. At the end we write the name of the java program file, which is test.java. Remember we are writing everything in relation to this path “F:\MY SPACE\JAVA\New folder\pack1”. Now we can see that a java class file has been created inside the class folder. 
+                </p>
+                <p>
+                    We are going to run the class file now. So we write 
+                </p>
+                <section class="code">
+                    java –cp “../class” test
+                </section>
+                <img src="../../images/pic13.png" alt="">
+                <p>
+                    Here “-cp” is denoting classpath. We are going to tell where the class file is. After writing “-cp” we write the location of the class path in relation to “F:\MY SPACE\JAVA\New folder\pack1”, which is “../class”. And then we write “test”, which is the class name, remember.
+                </p>
+                <p>
+                    Now check what we did in the image below.
+                </p>
+                <img src="../../images/pic14.png" alt="">
+                <p class="list">
+                    Now we are going to go to path “F:\MY SPACE\JAVA\New folder” and do everything from that path and save the class file in the same directory as the java program file.
+                </p>
+                <img src="../../images/pic15.png" alt="">
+                <img src="../../images/pic16.png" alt="">
+                <img src="../../images/pic17.png" alt="">
+                <p class="list">
+                    One important thing to remember is, when you write 
+                </p>
+                <section class="code">
+                    -d “[class path]”
+                </section>
+                <p>
+                    Whatever you write inside the [class path] will be set. For example, you can create files though this path. Let me show you an example. 
+                </p>
+                <img src="../../images/pic18.png" alt="">
+                <img src="../../images/pic19.png" alt="">
+                <p>
+                    As you can see "p1" and "p2" folder were not there but we created them dynamically though "-d". You can also do this.
+                </p>
+                <p>
+                    I hope these helped. Share with your friends also who need them and follow me on my socials to see programming problems solution.
+                </p>
+            </div>
+
+
+            <div class="follow_part">
+                <h2>Follow me</h2>
+                <ul>
+
+                </ul>
+            </div>
+
+            <div class="post_links">
+                <h2>Lates Posts</h2>
+                <ul>
+                    
+                </ul>
+            </div>
+        </main>
+
+        <aside>
+            <div class="address">
+                <div class="img">
+                    <img src="../../images/me.jpg" alt="">
+                </div>
+                <p>Maisha Maliha</p>
+                <div class="description">
+
+                </div>
+                <ul>
+
+                </ul>
+
+            </div>
+            <div class="featured-post">
+                <h2>Featured Posts</h2>
+                <ul>
+
+                </ul>
+            </div>
+        </aside>
+    </article>
+
+    <footer>
+        <p>All rights reserved by maishamaliha.com ©2020</p>
+    </footer>
+    
+    <script src="../../script/nav.js"></script>
+    <script src="../../script/post_list.js"></script>
+    <script src="../../script/des.js"></script>
+    <script src="../../script/social.js"></script>
+</body>
+</html>
