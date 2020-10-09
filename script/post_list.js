@@ -15,8 +15,19 @@
 // },
 
 var posts = {
+    6:{
+        title: "Compile and run java program with packages using terminal",
+        link: "https://www.maishamaliha.com/posts/10-2020/Compile-and-run-java-program-with-package.html",
+        date:"09/10/2020",
+        author: "Maisha Maliha",
+        tag:{
+            name:"code",
+            loc: "code.html"
+        },
+        img:"https://www.maishamaliha.com/images/pic20.png"
+    },
     5:{
-        title: "Compile and run java program in different directory",
+        title: "Compile and run java program in different directory using terminal",
         link: "https://www.maishamaliha.com/posts/10-2020/Compile-and-run-java-program-in-different-directory.html",
         date:"09/10/2020",
         author: "Maisha Maliha",
@@ -24,7 +35,7 @@ var posts = {
             name:"code",
             loc: "code.html"
         },
-        img:"https://www.maishamaliha.com/images/pic3.png"
+        img:"https://www.maishamaliha.com/images/pic11.png"
     },
     4:{
         title: "How to use terminal to compile and run java program",
