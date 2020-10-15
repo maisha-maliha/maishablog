@@ -1,0 +1,89 @@
+:root{
+    --blue: #3150ff;
+    --color:rgb(78, 78, 78);
+    --pink:hotpink;
+    --dm:'DM Serif Text', serif;
+    --robo: 'Roboto', sans-serif;
+    --sac :'Sacramento', cursive;
+    --cook:  'Niconne', cursive;
+}
+.problem{
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+.problem h2{
+    font-family: var(--cook);
+    color: var(--blue);
+    font-size: 35px;
+    text-decoration: dashed;
+    margin: 50px;
+}
+.link ul li{
+    list-style: none;
+    margin: 10px 0;
+} 
+.link ul li::before{
+    content: '#';
+    color: var(--blue);
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+} 
+.link ul li a {
+    color: var(--pink);
+    font-family: var(--robo);
+    font-size: 20px;
+    text-decoration: none;
+}
+.link ul li a:visited{
+    color: var(--blue);
+}
+.box{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+aside button{
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+aside ul li{
+    margin: 10px 0;
+    list-style: none;
+}
+aside .button{
+    position: sticky;
+    top: calc(10vh + 20px);
+}
+aside .button button:focus{
+    outline: none;
+}
+aside .button button:hover{
+    background-color: var(--pink);
+}
+p{
+    font-family: var(--robo);
+    text-align: center;
+}
+h3{
+    font-family: var(--dm);
+    margin: 50px 0 10px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+@media(max-width:600px){
+    .box{
+        grid-template-columns: 1fr;
+    }
+    aside .button{
+        position: unset;
+        top: 0;
+    }
+    aside{
+        grid-row:1/2 ;
+    }
+}
