@@ -15,6 +15,17 @@
 // },
 
 var posts = {
+    7:{
+        title: "How to stay updated with JavaScript versions",
+        link: "https://www.maishamaliha.com/posts/12-2020/How-to-stay-updated-with-javascript-version.html",
+        date:"05/12/2020",
+        author: "Maisha Maliha",
+        tag:{
+            name:"code",
+            loc: "code.html"
+        },
+        img:"https://www.maishamaliha.com/images/js.png"
+    },
     6:{
         title: "Compile and run java program with packages using terminal",
         link: "https://www.maishamaliha.com/posts/10-2020/Compile-and-run-java-program-with-package.html",
