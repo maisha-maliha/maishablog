@@ -18,7 +18,7 @@ var posts = {
     7:{
         title: "How to stay updated with JavaScript versions",
         link: "https://www.maishamaliha.com/posts/12-2020/How-to-stay-updated-with-javascript-version.html",
-        date:"05/12/2020",
+        date:"02/12/2020",
         author: "Maisha Maliha",
         tag:{
             name:"code",
