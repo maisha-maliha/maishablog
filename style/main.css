@@ -27,7 +27,12 @@ h3{
     margin: 0 0 80px;
     min-height: 200px;
 }
-.post_des{
+.post-des{
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.post_des .post-other{
     padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr 4fr;
